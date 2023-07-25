@@ -12,7 +12,7 @@ if (num%2==0) {
     console.log("O número é ímpar");
 }
 
-var nome="algo";
+var nome="";
 if(nome===""){
     console.log("String vazia");
 }else{
@@ -35,19 +35,34 @@ if(typeof  variavel === "boolean") {
 }
 
 //ELSE IF
+
+//questao 1 e 4
 var num = -11;
 if (num>0){
     console.log("O número é positivo");
-}else if(){
+    if (num%2==0) {
+        console.log("e par");
+    }else{
+        console.log("e ímpar");
+    }
+}else if(num<0){
     console.log("O número é negativo");
+    if (num%2==0) {
+        console.log("e par");
+    }else{
+        console.log("e ímpar");
+    }
 }else{
-    console.log("O número é 0");
+    console.log("O número é o 0");
 }
 
-if (num%2==0)||(num%3==0)||(num%5==0)||(num%7==0){
+//questao 2 e 5
+num = 700;
+if ((num%2==0)||(num%3==0)||(num%5==0)||(num%7==0)){
     console.log("O número é divisível por 2, 3, 5 ou 7");
 }
 
+//questao 3
 var variavel="";
 if(typeof  variavel === "boolean") {
     console.log("É booleano");
@@ -60,11 +75,7 @@ if(typeof  variavel === "boolean") {
 }
 
 
-
-
-
-
 //npm install readline-sync
-/*const readline = require("reeadline-sync")
+/*const readline = require("readline-sync")
 var nome = readline.question("Digite o seu nome");
 console.log("O nome digitado foi ",nome);*/
