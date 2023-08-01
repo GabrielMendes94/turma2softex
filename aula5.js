@@ -156,23 +156,25 @@ console.log("(1) - Soma");
 console.log("(2) - Subtração");
 console.log("(3) - Multiplicação");
 console.log("(4) - Divisão");
-let operacao = readline.question("Digite a opção da operação a ser realizada: ");
+let operacao = readline.questionInt("Digite a opção da operação a ser realizada: ");
+let num1 = readline.questionFloat("Digite o valor do primeiro número: ");
+let num2 = readline.questionFloat("Digite o valor do segundo número: ")
 
 switch (operacao) {
     case 1:
-        
+        console.log(num1," + ",num2," = ",(num1 + num2));
         break;
 
     case 2:
-
+        console.log(num1," - ",num2," = ",(num1 - num2));
         break;
 
     case 3:
-
+        console.log(num1," * ",num2," = ",(num1 * num2));
         break;
 
     case 4:
-
+        console.log(num1," / ",num2," = ",(num1 / num2));
         break;
 
     default:
